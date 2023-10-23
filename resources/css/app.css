@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container-page{
+    @apply flex items-center justify-center bg-gradient-to-b from-purple-500 via-purple-500 to-sky-500 w-screen h-[91.6vh]
+}
+
+/* PAGE  */
+.body-page{
+    @apply py-4 px-10 w-full h-full
+}
+
+.card{
+    @apply w-1/3 h-1/2 bg-white rounded-3xl
+}
+
+/* BUTTONS  */
+.btn-primary{
+    @apply px-2 py-1 rounded-lg shadow-sm bg-purple-500 text-sm font-semibold text-white hover:shadow-xl duration-300 hover:from-sky-600 hover:to-purple-500 hover:bg-gradient-to-r
+}
+.btn-search{
+    @apply p-2 rounded-full bg-sky-500 hover:shadow-xl duration-300 hover:bg-sky-800
+}
+
+
+/* TITULOS  */
+.title{
+    @apply text-4xl font-extralight text-purple-600 select-none
+}
+.title-lit{
+    @apply text-2xl font-extralight text-purple-600 select-none
+}
+
+
+/* SOCIAL MEDIA  */
+.info-icons{
+    @apply flex items-center justify-around mt-1 gap-2 
+}
+.instagram{
+    @apply hover:fill-purple-600 duration-300 fill-white
+}
+.github{
+    @apply hover:fill-sky-600 duration-300 fill-white
+}
+.linkedin{
+    @apply hover:fill-blue-800 duration-300 fill-white
+}
+
+/* FORM  */
+.form{
+    @apply w-1/2 flex flex-col gap-3 items-center justify-center
+}
+
+/* INPUT GROUP  */
+.group-input {
+    @apply w-full text-sm rounded-2xl bg-cinzaClaro px-2 pt-1 relative
+}
+.group-input .label {
+    @apply text-cinzaEscuro font-medium select-none
+}
+.group-input .input {
+    @apply bg-transparent w-full focus:outline-none text-cinzaEscuro
+}
+.group-input:focus-within {
+    @apply shadow-md duration-200
+}
+.group-input:focus-within .label {
+    @apply text-purple-500
+}
+
+
+
+.group-input-search{
+    @apply w-full text-sm relative
+}
+.group-input-search .label{
+    @apply text-cinzaEscuro font-medium select-none
+}
+.group-input-search .input{
+    @apply bg-transparent w-full focus:outline-none text-cinzaEscuro
+}
+.group-input-search .select{
+    @apply bg-transparent w-full focus:outline-none text-cinzaEscuro cursor-pointer
+}
+.group-input-search:focus-within .label {
+    @apply text-sky-500
+}
+
+
+/* INPUT PERSONALIZADO  */
